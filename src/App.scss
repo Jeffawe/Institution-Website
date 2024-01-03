@@ -1,0 +1,29 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: aliceblue;
+}
+
+#root{
+  width: 100%;
+  padding-top: 80px;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: #7ba23e;
+  border-radius: 20px;
+  font-size: large;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  #root{
+    padding-top: 70px;
+  }
+}

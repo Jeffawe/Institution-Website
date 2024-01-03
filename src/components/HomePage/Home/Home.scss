@@ -1,0 +1,142 @@
+.home {
+  width: 100%; // Adjust the width as needed
+
+  .slider-container {
+    width: 100%;
+    max-height: 500px; // Adjust the value as needed
+
+    .slick-list {
+      width: 100%;
+    }
+
+    .slide {
+      position: relative;
+
+      img {
+        width: 100%;
+        max-height: 500px; // Set a maximum height as needed
+        object-fit: cover;
+      }
+
+      .text {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 5%;
+        font-size: 50px;
+        font-weight: bold;
+        color: #fff; // Customize text color
+
+        p {
+          margin: 0px;
+        }
+
+        .subtext {
+          font-size: 20px; // Smaller text size
+        }
+
+        button {
+          padding: 10px;
+          background-color: #0087ca;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+          font-size: 20px;
+          transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+          background-color: #8fb3e7;
+        }
+      }
+    }
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: 10px; // Adjust the bottom position as needed
+    left: 50%; // Center horizontally
+    transform: translateX(-50%); // Center horizontally
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slick-arrow {
+    font-size: 24px;
+    color: #fff; // Customize button color
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      color: #00f; // Customize button hover color
+    }
+  }
+
+  .slick-prev {
+    left: 10px;
+  }
+
+  .slick-next {
+    right: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home .slider-container {
+    max-height: 250px;
+
+    .slide {
+
+      img {
+        max-height: 250px;
+      }
+
+      .text {
+        font-size: 30px;
+        left: 8%;
+
+        p {
+          font-size: 30px;
+        }
+
+        button {
+          padding: 8px;
+          font-size: 10px;
+        }
+
+        .subtext {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .home .slider-container .slide {
+    .text {
+      font-size: 30px;
+      left: 10%;
+
+      p {
+        font-size: 30px;
+      }
+
+      button {
+        padding: 8px;
+        font-size: 10px;
+      }
+
+      .subtext {
+        font-size: 20px;
+      }
+    }
+  }
+}

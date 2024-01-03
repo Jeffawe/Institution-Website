@@ -1,0 +1,79 @@
+$colors: #ff5733, blue;
+
+.bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8fb3e7;
+    font-weight: bold;
+    color: #fff; // Adjust the text color
+    padding: 50px; // Adjust the padding
+    flex: 1;
+    gap: 100px;
+}
+
+.bar-item {
+    align-items: center;
+    cursor: default;
+}
+
+.bar-item svg {
+    font-size: 30px; // Adjust the icon size
+}
+
+.color1 {
+  color: nth($colors, 1);
+}
+
+.color2{
+    color: nth($colors, 2);
+}
+
+@media (max-width: 1025px) {
+    .bar {
+        padding: 20px; // Adjust the padding
+        flex: 1;
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .bar-item svg {
+        font-size: 20px; // Adjust the icon size
+    }
+
+    .bar-item p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bar {
+        padding: 10px; // Adjust the padding
+        gap: 12px;
+    }
+
+    .bar-item svg {
+        font-size: 10px; // Adjust the icon size
+    }
+
+    .bar-item p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .bar {
+        padding: 5px; // Adjust the padding
+        gap: 8px;
+    }
+
+    .bar-item svg {
+        font-size: 10px; // Adjust the icon size
+    }
+
+    .bar-item p {
+        font-size: 10px;
+        text-align: center;
+    }
+}
