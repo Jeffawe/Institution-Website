@@ -1,5 +1,5 @@
 import { FaBook, FaBookReader } from 'react-icons/fa';
-import './info.scss';
+import './Info.scss';
 import { Slide } from "react-awesome-reveal";
 
 const Info = () => {
